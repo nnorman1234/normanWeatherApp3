@@ -1,0 +1,123 @@
+body {	
+	background-color: #1E1D22;
+	color: #FFFFFF;
+}
+
+.wrapper{
+	max-width: 960px;
+	max-height: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px 30px 30px 30px;
+	background: linear-gradient(to bottom, #10a6f1 0%,#1e528e 100%);
+	border-radius: 25px;
+}
+
+img{
+	width: 400px;
+	height: 400px;
+}
+
+.icon img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.degree{
+	float: right;
+	padding-right: 300px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 50px;
+	font-size: 62px;
+}
+
+.location{
+	text-align: right;
+	padding-right: 130px;
+	font-size: 62px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.degree h1{
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	padding-right: 300px;
+	padding-top: 50px;
+}
+
+.location h2{
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.searchBar input[type=text] {
+	padding: 10px;
+	border-radius: 25px;
+	margin-right: 16px;
+	font-size: 16px;
+}
+
+.dateTime{
+	text-align: left;
+	font-size: 48px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.dateTime h2{
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+	display: none;
+}
+
+.dot{
+	height: 30px;
+	width: 30px; 
+	background-color: red;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 10px;
+	animation: scaling 2s ease-in-out infinite;
+	animation-name: dot_animation;
+	animation-duration: 4s;
+	animation-delay: 2s;
+}
+
+@keyframes dot_animation {
+	from {background-color: red;}
+	to {background-color: yellow;}
+	to {background-color: cyan;}
+	to {background-color: greenyellow;}
+
+}
+
+#loader {
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #000;
+	width: 120px;
+	height: 120px;
+	float: left;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
+	position: absolute;
+	animation: spin 2s linear infinite;
+	display: none;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

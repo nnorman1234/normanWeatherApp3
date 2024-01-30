@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+	<!--- Name: Nicholas Norman --->
+	<!--- Last Modified: January 30, 2024 --->
+
+	<title> normanweatherapp </title>
+	<link rel = "stylesheet" href = "normanweatherapp.css">
+
+</head>
+<body>
+	<h1 align = "center"> What's the Weather Like??? </h1>
+
+	<div class = "searchBar">
+
+		<center><input type="text" id = "cityLocation" placeholder="Search City/State..."></center>
+		
+		<center><button id = "cityButton">Submit</button></center>
+	</div>
+	
+	<br />
+	<div id="loader"></div>
+	<div class = "wrapper">
+
+			<h2 class = "dateTime">DATE</h2>
+
+			<h2 class = "dateTime" id = "Time">TIME</h2>
+
+			<h1 class = "degree"> </h1>
+
+		<img src="webAppIcons/sun.png" id = "iconPic" alt="Weather Icon">
+
+			<u> <h2 class = "location"> Choose Location </h2> </u>
+
+	</div>
+
+
+	<!--- Script Begins Below --->
+	
+	
+	<script type="text/javascript" src="normanWeatherApp.js"></script>
+
+
+
+</body>
+</html>
